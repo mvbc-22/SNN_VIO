@@ -1,0 +1,54 @@
+# =========================
+# Python virtual environment
+# =========================
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Datasets
+# =========================
+data/
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.hdf5
+*.aedat
+*.aedat4
+*.npy
+*.npz
+
+# =========================
+# Experiment outputs
+# =========================
+outputs/
+*.log
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+*.swp
+*.swo
