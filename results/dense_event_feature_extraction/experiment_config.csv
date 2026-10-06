@@ -1,0 +1,2 @@
+dataset,sensor_resolution,window_definition,feature_detector,feature_threshold,meaningful_min_features,meaningful_min_coverage_percent,meaningful_min_events,total_windows,meaningful_windows,meaningful_percentage
+DAVISDATA/shapes_6dof,"[240, 180]","consecutive APS timestamps [t_k, t_{k+1})",3x3 four-direction absolute-difference score,4,10,2.0,20,1355,1355,100.0
