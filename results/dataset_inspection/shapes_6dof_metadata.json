@@ -1,0 +1,73 @@
+{
+  "generated_at_utc": "2026-10-10T13:15:39.027106+00:00",
+  "configuration": {
+    "data_dir": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/step_1_VIO/data/DAVIS",
+    "recording": "shapes_6dof",
+    "timestamp_unit": "microseconds",
+    "validation_chunk_size": 1000000
+  },
+  "stage": "1A",
+  "recording": "shapes_6dof",
+  "dataset_loader": "tonic.datasets.DAVISDATA",
+  "dataset_directory": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/step_1_VIO/data/DAVIS",
+  "event_fields": [
+    "t",
+    "x",
+    "y",
+    "p"
+  ],
+  "event_polarities_observed": [
+    0,
+    1
+  ],
+  "timestamp_unit": "microseconds",
+  "timestamp_interpretation": "Tonic converts source seconds to integer microseconds and resets each stream's first timestamp independently to zero. Reported ranges are stream-relative and are not synchronized.",
+  "synchronization_performed": false,
+  "streams": {
+    "events": {
+      "available": true,
+      "sample_count": 17962477,
+      "timestamp_unit": "microseconds",
+      "timestamp_origin": "Tonic-zeroed independently for this stream",
+      "start": 0,
+      "end": 59735406,
+      "duration": 59735406,
+      "monotonic": true
+    },
+    "aps_frames": {
+      "available": true,
+      "sample_count": 1356,
+      "timestamp_unit": "microseconds",
+      "timestamp_origin": "Tonic-zeroed independently for this stream",
+      "start": 0,
+      "end": 59708571,
+      "duration": 59708571,
+      "monotonic": true,
+      "frame_count": 1356,
+      "resolution_px": {
+        "width": 240,
+        "height": 180
+      }
+    },
+    "imu": {
+      "available": true,
+      "sample_count": 59638,
+      "timestamp_unit": "microseconds",
+      "timestamp_origin": "Tonic-zeroed independently for this stream",
+      "start": 0,
+      "end": 59726941,
+      "duration": 59726941,
+      "monotonic": true
+    },
+    "ground_truth": {
+      "available": true,
+      "sample_count": 11862,
+      "timestamp_unit": "microseconds",
+      "timestamp_origin": "Tonic-zeroed independently for this stream",
+      "start": 0,
+      "end": 59720426,
+      "duration": 59720426,
+      "monotonic": true
+    }
+  }
+}
