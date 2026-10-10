@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-10-10T14:57:54.253363+00:00",
+  "frame_window_index": 678,
+  "interval_common_time_us": [
+    29895515,
+    29939581
+  ],
+  "event_count_in_interval": 10879,
+  "event_timestamp_offset_us": 0,
+  "radius_px": 8.0,
+  "time_window_us": 50000.0,
+  "timestamp_interpretation": "Original event and APS timestamps are integer microseconds. Event timestamps are shifted by the Stage 1 stream-origin offset only for common-axis association; original event t is retained in decisions.",
+  "association_policy": "Stable chronological processing (source order for equal times); strict d2 < R2 and abs(dt) < T; no match is rejected; multiple candidates are counted ambiguous and assigned once to minimum d2, then lower feature ID. Polarity is preserved but not used.",
+  "events_processed": 10879,
+  "events_associated": 10134,
+  "association_ratio": 0.9315194411251034,
+  "events_rejected": 745,
+  "events_ambiguous": 6272,
+  "active_features": 500
+}

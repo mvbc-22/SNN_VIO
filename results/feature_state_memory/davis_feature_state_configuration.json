@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-10-10T14:54:17.778449+00:00",
+  "configuration": {
+    "recording": "shapes_6dof",
+    "feature_count": 500,
+    "timestamp_us": 29876317,
+    "slot_count": 500
+  },
+  "frame_index": 678,
+  "slot_count": 500,
+  "active_state_count": 500,
+  "state_dtype": [
+    {
+      "name": "id",
+      "dtype": "int32"
+    },
+    {
+      "name": "x",
+      "dtype": "float32"
+    },
+    {
+      "name": "y",
+      "dtype": "float32"
+    },
+    {
+      "name": "vx",
+      "dtype": "float32"
+    },
+    {
+      "name": "vy",
+      "dtype": "float32"
+    },
+    {
+      "name": "confidence",
+      "dtype": "float32"
+    },
+    {
+      "name": "timestamp",
+      "dtype": "int64"
+    },
+    {
+      "name": "valid",
+      "dtype": "uint8"
+    }
+  ],
+  "timestamp_unit": "microseconds (original Stage 1 Tonic units)",
+  "velocity_unit": "pixels per microsecond",
+  "invalid_state": {
+    "id": -1,
+    "x": 0,
+    "y": 0,
+    "vx": 0,
+    "vy": 0,
+    "confidence": 0,
+    "timestamp": 0,
+    "valid": 0
+  },
+  "confidence_initialization": "1.0 for APS-detected valid features; Stage 2A detector response is preserved separately in the features array and is not directly normalized into confidence."
+}

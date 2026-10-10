@@ -1,0 +1,56 @@
+{
+  "generated_at_utc": "2026-10-10T14:41:49.953282+00:00",
+  "algorithm": "Shi-Tomasi (OpenCV goodFeaturesToTrack, Harris disabled)",
+  "configuration": {
+    "requested_counts": [
+      50,
+      100,
+      200,
+      300,
+      500,
+      1000
+    ],
+    "frame_indices": [
+      0,
+      338,
+      677,
+      1016,
+      1355
+    ],
+    "timestamp_unit": "microseconds",
+    "opencv_version": "5.0.0",
+    "numpy_version": "1.26.4",
+    "quality_level": 0.01,
+    "min_feature_distance_px": 5.0,
+    "block_size_px": 3,
+    "bucket_grid": [
+      8,
+      6
+    ],
+    "feature_dtype": [
+      {
+        "name": "id",
+        "dtype": "int32"
+      },
+      {
+        "name": "x",
+        "dtype": "float32"
+      },
+      {
+        "name": "y",
+        "dtype": "float32"
+      },
+      {
+        "name": "quality",
+        "dtype": "float32"
+      },
+      {
+        "name": "valid",
+        "dtype": "uint8"
+      }
+    ],
+    "feature_id_semantics": "Unique monotonically assigned record IDs within this experiment run; IDs do not imply feature identity across frames."
+  },
+  "measurement_count": 30,
+  "feature_record_count": 8915
+}

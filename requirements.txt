@@ -2,6 +2,7 @@ tonic
 numpy<2
 matplotlib
 scipy<1.16
+opencv-python>=4.8
 pandas
 h5py
 Pillow

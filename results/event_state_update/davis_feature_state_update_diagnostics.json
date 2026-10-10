@@ -1,0 +1,37 @@
+{
+  "generated_at_utc": "2026-10-10T15:12:18.416641+00:00",
+  "configuration": {
+    "radius_px": 8.0,
+    "time_window_us": 50000.0,
+    "alpha": 0.5,
+    "beta": 0.1,
+    "minimum_delta_t_us": 1.0,
+    "confidence_penalty": 0.05
+  },
+  "interval_index": 678,
+  "interval_common_time_us": [
+    29895515,
+    29939581
+  ],
+  "timestamp_unit": "microseconds",
+  "velocity_unit": "pixels per microsecond",
+  "confidence_rule": "confidence_after = confidence_before * (1 - confidence_penalty * min(distance_squared / R_squared, 1))",
+  "zero_delta_t_rule": "Apply the alpha position correction; keep velocity unchanged to avoid division by zero.",
+  "small_delta_t_rule": "For positive dt, divide the beta residual correction by max(dt, minimum_delta_t_us).",
+  "valid_state_rule": "Only valid slots participate in association; inactive slots remain inactive and are not modified.",
+  "numerical_rejection_rule": "Reject an associated update atomically if any proposed float state is non-finite or outside float32 range.",
+  "events_processed": 10879,
+  "successful_updates": 1555,
+  "events_rejected": 9324,
+  "events_ambiguous": 576,
+  "association_ratio": 0.14293593161136134,
+  "active_features_initial": 500,
+  "active_features_final": 500,
+  "features_with_updates": 132,
+  "mean_events_per_updated_feature": 11.780303030303031,
+  "max_events_per_feature": 44,
+  "mean_position_update_magnitude": 2.0297855867984143,
+  "max_position_update_magnitude": 3.994744274315267,
+  "mean_velocity_update_magnitude": 0.011447682836172555,
+  "max_velocity_update_magnitude": 0.5458268078536216
+}

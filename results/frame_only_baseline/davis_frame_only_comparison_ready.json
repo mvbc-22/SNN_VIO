@@ -1,0 +1,88 @@
+{
+  "schema": "snn-vio-tracker-comparison-v1",
+  "stage": "6A",
+  "method": "frame_only_shi_tomasi_pyramidal_lk",
+  "uses_events": false,
+  "interval_index": 678,
+  "frame_timestamps_common_us": [
+    29895515,
+    29939581
+  ],
+  "timestamp_unit": "microseconds",
+  "configuration": {
+    "feature_count": 500,
+    "quality_level": 0.01,
+    "min_feature_distance_px": 5.0,
+    "block_size_px": 3,
+    "bucket_columns": 8,
+    "bucket_rows": 6,
+    "reference_match_radius_px": 15,
+    "klt_window_px": 21,
+    "klt_max_pyramid_level": 3,
+    "klt_max_iterations": 30,
+    "klt_epsilon": 0.01
+  },
+  "metrics": {
+    "method": "frame_only_shi_tomasi_pyramidal_lk",
+    "initial_features": 500,
+    "tracked_features": 463,
+    "klt_successful_features": 463,
+    "klt_failed_features": 37,
+    "klt_failure_rate": 0.074,
+    "successfully_predicted_features": 409,
+    "reference_matched_features": 409,
+    "reference_features_detected": 500,
+    "epe_px": 3.8643713100066663,
+    "epe_median_px": 3.1061733935783415,
+    "track_lifetime_mean_us": 40805.116,
+    "track_lifetime_max_us": 44066,
+    "failure_rate": 0.182,
+    "processing_time_ms": 324.07596,
+    "latency_klt_call_ms": 2.843938,
+    "latency_per_initial_feature_us": 5.687876,
+    "latency_definition": "Wall-clock time around the single cv2.calcOpticalFlowPyrLK call; per-feature value is amortized KLT-call time, not hardware latency.",
+    "processing_time_definition": "In-memory time for frame-k detection, KLT, frame-k+1 reference detection, and shared endpoint matching; excludes dataset loading and plotting.",
+    "reference_match_policy": "Same greedy one-to-one nearest reference-feature matching and configured distance gate as Stage 5.",
+    "epe_definition": "Mean endpoint Euclidean pixel error over successful KLT predictions matched to frame-k+1 Shi-Tomasi references.",
+    "failure_rate_definition": "Unmatched initial feature tracks after endpoint reference matching divided by the common initial Shi-Tomasi feature count; comparable to Stage 5. KLT-only failures are reported separately.",
+    "klt_failure_rate_definition": "KLT status failures or out-of-frame/non-finite points divided by initial Shi-Tomasi feature count.",
+    "track_lifetime_definition": "For this one interval, a KLT-successful point receives the full APS interval lifetime and a KLT failure receives zero; the reported mean uses all initial features. This is interval-censored.",
+    "common_metrics": {
+      "initial_features": 500,
+      "tracked_features": 463,
+      "successfully_predicted_features": 409,
+      "reference_matched_features": 409,
+      "epe_px": 3.8643713100066663,
+      "track_lifetime_mean_us": 40805.116,
+      "failure_rate": 0.182,
+      "processing_time_ms": 324.07596,
+      "latency_ms": 2.843938
+    }
+  },
+  "common_metrics": {
+    "initial_features": 500,
+    "tracked_features": 463,
+    "successfully_predicted_features": 409,
+    "reference_matched_features": 409,
+    "epe_px": 3.8643713100066663,
+    "track_lifetime_mean_us": 40805.116,
+    "failure_rate": 0.182,
+    "processing_time_ms": 324.07596,
+    "latency_ms": 2.843938
+  },
+  "checks": {
+    "initialization": true,
+    "klt_output": true,
+    "reference_matching": true,
+    "evaluation": true
+  },
+  "definitions": {
+    "tracked_features": "KLT status-positive, finite, in-image endpoints.",
+    "EPE": "Mean endpoint Euclidean pixel error over successful KLT predictions matched to frame-k+1 Shi-Tomasi references.",
+    "failure_rate": "Unmatched initial feature tracks after endpoint reference matching divided by the common initial Shi-Tomasi feature count; comparable to Stage 5. KLT-only failures are reported separately.",
+    "track_lifetime": "For this one interval, a KLT-successful point receives the full APS interval lifetime and a KLT failure receives zero; the reported mean uses all initial features. This is interval-censored.",
+    "latency": "Wall-clock time around the single cv2.calcOpticalFlowPyrLK call; per-feature value is amortized KLT-call time, not hardware latency.",
+    "common_latency_ms": "Stage 6A cv2.calcOpticalFlowPyrLK call time; excludes detection, dataset I/O and plotting."
+  },
+  "arrays_file": "davis_frame_only_baseline_results.npz"
+}

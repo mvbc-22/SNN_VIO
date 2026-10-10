@@ -1,0 +1,65 @@
+{
+  "generated_at_utc": "2026-10-10T15:38:04.457583+00:00",
+  "configuration": {
+    "recording": "shapes_6dof",
+    "interval_index": 678,
+    "events": 10879,
+    "active_features": 500,
+    "radius_px": 8.0,
+    "time_window_us": 50000.0,
+    "sensor_width": 240,
+    "sensor_height": 180,
+    "cell_width": 16,
+    "cell_height": 16,
+    "timestamp_unit": "microseconds"
+  },
+  "comparison": {
+    "equivalent": true,
+    "absolute_tolerance": 1e-09,
+    "relative_tolerance": 1e-09,
+    "differences": {
+      "event_index": 0,
+      "t_event": 0,
+      "t_common_us": 0,
+      "x_event": 0,
+      "y_event": 0,
+      "p": 0,
+      "feature_id": 0,
+      "feature_slot": 0,
+      "candidate_count": 0,
+      "associated": 0,
+      "distance_squared": 0,
+      "events_per_feature": 0
+    }
+  },
+  "performance": {
+    "brute_force": {
+      "events_processed": 10879,
+      "events_associated": 10134,
+      "association_ratio": 0.9315194411251034,
+      "events_rejected": 745,
+      "events_ambiguous": 6272,
+      "active_features": 500,
+      "candidate_features_total": 5439500,
+      "candidate_features_per_event": 500.0,
+      "distance_calculations_total": 5439500,
+      "distance_calculations_per_event": 500.0,
+      "total_runtime_seconds": 9.979344819,
+      "events_processed_per_second": 1090.151728126191
+    },
+    "grid": {
+      "events_processed": 10879,
+      "events_associated": 10134,
+      "association_ratio": 0.9315194411251034,
+      "events_rejected": 745,
+      "events_ambiguous": 6272,
+      "active_features": 500,
+      "candidate_features_total": 397322,
+      "candidate_features_per_event": 36.52192297086129,
+      "distance_calculations_total": 397322,
+      "distance_calculations_per_event": 36.52192297086129,
+      "total_runtime_seconds": 0.860992198,
+      "events_processed_per_second": 12635.42227823997
+    }
+  }
+}

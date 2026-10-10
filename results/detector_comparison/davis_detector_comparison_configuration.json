@@ -1,0 +1,228 @@
+{
+  "generated_at_utc": "2026-10-10T14:50:11.424250+00:00",
+  "parameters": {
+    "algorithm": "Stage 2B APS detector comparison",
+    "timestamp_unit": "microseconds",
+    "frame_indices": [
+      0,
+      1,
+      338,
+      339,
+      677,
+      678,
+      1015,
+      1016,
+      1354,
+      1355
+    ],
+    "consecutive_pair_indices": [
+      0,
+      338,
+      677,
+      1015,
+      1354
+    ],
+    "requested_counts": [
+      50,
+      100,
+      200,
+      300,
+      500,
+      1000
+    ],
+    "spatial_bucket_grid": [
+      8,
+      6
+    ],
+    "minimum_feature_distance_px": 5.0,
+    "shi_tomasi": {
+      "quality_level": 0.01,
+      "block_size_px": 3,
+      "quality_response": "cornerMinEigenVal minimum eigenvalue"
+    },
+    "fast": {
+      "threshold": 1,
+      "pattern": "TYPE_9_16",
+      "nonmax_suppression": true,
+      "quality_response": "OpenCV KeyPoint.response"
+    },
+    "repeatability": {
+      "method": "mutual nearest feature-coordinate matches",
+      "radius_px": 3.0,
+      "warning": "No geometric motion compensation or KLT is applied; raw-coordinate repeatability is sensitive to scene/camera motion."
+    },
+    "timing": {
+      "repeats": 3,
+      "statistic": "median wall-clock milliseconds",
+      "includes": "candidate detection plus per-cap spatial selection",
+      "excludes": "dataset load, image decode, synchronization, and plotting"
+    },
+    "opencv_version": "5.0.0",
+    "numpy_version": "1.26.4",
+    "feature_record_dtype": [
+      {
+        "name": "id",
+        "dtype": "int32"
+      },
+      {
+        "name": "x",
+        "dtype": "float32"
+      },
+      {
+        "name": "y",
+        "dtype": "float32"
+      },
+      {
+        "name": "quality",
+        "dtype": "float32"
+      },
+      {
+        "name": "valid",
+        "dtype": "uint8"
+      }
+    ]
+  },
+  "summary": {
+    "shi_tomasi": {
+      "50": {
+        "mean_detected": 50.0,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9947884500670016,
+        "mean_native_response": 0.0027141599101014437,
+        "mean_median_native_response": 0.00023837541521061213,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 0.28928250540047884,
+        "mean_total_time_ms": 6.067431095289066,
+        "mean_repeatability_percent": 14.000000000000002
+      },
+      "100": {
+        "mean_detected": 100.0,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9949623836209971,
+        "mean_native_response": 0.001929102634312585,
+        "mean_median_native_response": 0.00013148920588719194,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 0.4558107000775635,
+        "mean_total_time_ms": 6.233959289966151,
+        "mean_repeatability_percent": 18.0
+      },
+      "200": {
+        "mean_detected": 200.0,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9913765805602115,
+        "mean_native_response": 0.0012295501364860684,
+        "mean_median_native_response": 6.986752596276347e-05,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 0.8370161056518555,
+        "mean_total_time_ms": 6.615164695540443,
+        "mean_repeatability_percent": 26.3
+      },
+      "300": {
+        "mean_detected": 300.0,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9847168123863801,
+        "mean_native_response": 0.0008638594474177808,
+        "mean_median_native_response": 4.810179707419593e-05,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 1.1845383909530938,
+        "mean_total_time_ms": 6.962686980841681,
+        "mean_repeatability_percent": 30.999999999999993
+      },
+      "500": {
+        "mean_detected": 500.0,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9685039628152754,
+        "mean_native_response": 0.0005405350355431437,
+        "mean_median_native_response": 2.7702439183485694e-05,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 1.987951691262424,
+        "mean_total_time_ms": 7.766100281151012,
+        "mean_repeatability_percent": 43.08
+      },
+      "1000": {
+        "mean_detected": 632.7,
+        "mean_bucket_coverage_percent": 99.58333333333334,
+        "mean_normalized_bucket_entropy": 0.9593075309146437,
+        "mean_native_response": 0.00043835242977365854,
+        "mean_median_native_response": 2.1589573134406236e-05,
+        "mean_detection_time_ms": 5.778148589888588,
+        "mean_selection_time_ms": 2.5588673015590757,
+        "mean_total_time_ms": 8.337015891447663,
+        "mean_repeatability_percent": 53.42905773585913
+      }
+    },
+    "fast": {
+      "50": {
+        "mean_detected": 50.0,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9962208679210101,
+        "mean_native_response": 18.187999725341797,
+        "mean_median_native_response": 7.6,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 0.28261561528779566,
+        "mean_total_time_ms": 1.0954873054288328,
+        "mean_repeatability_percent": 11.200000000000001
+      },
+      "100": {
+        "mean_detected": 100.0,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9979763855117181,
+        "mean_native_response": 14.257999992370605,
+        "mean_median_native_response": 6.05,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 0.47973169130273163,
+        "mean_total_time_ms": 1.2926033814437687,
+        "mean_repeatability_percent": 17.2
+      },
+      "200": {
+        "mean_detected": 200.0,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9989840229166316,
+        "mean_native_response": 10.06949977874756,
+        "mean_median_native_response": 4.2,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 0.8635686943307519,
+        "mean_total_time_ms": 1.676440384471789,
+        "mean_repeatability_percent": 26.0
+      },
+      "300": {
+        "mean_detected": 300.0,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9992207884807052,
+        "mean_native_response": 7.648666667938232,
+        "mean_median_native_response": 3.5,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 1.3218683889135718,
+        "mean_total_time_ms": 2.134740079054609,
+        "mean_repeatability_percent": 31.866666666666667
+      },
+      "500": {
+        "mean_detected": 499.8,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9978647922192483,
+        "mean_native_response": 5.26771092414856,
+        "mean_median_native_response": 2.1,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 2.381351700751111,
+        "mean_total_time_ms": 3.194223390892148,
+        "mean_repeatability_percent": 45.48224899598393
+      },
+      "1000": {
+        "mean_detected": 550.3,
+        "mean_bucket_coverage_percent": 100.0,
+        "mean_normalized_bucket_entropy": 0.9959750194160218,
+        "mean_native_response": 4.847926902770996,
+        "mean_median_native_response": 1.8,
+        "mean_detection_time_ms": 0.8128716901410371,
+        "mean_selection_time_ms": 2.7537234127521515,
+        "mean_total_time_ms": 3.5665951028931886,
+        "mean_repeatability_percent": 49.91389510965035
+      }
+    }
+  },
+  "recommendation": [
+    "fast",
+    "Selected for higher raw-coordinate repeatability (>2 percentage-point difference)."
+  ],
+  "archive_record_count": 34828
+}

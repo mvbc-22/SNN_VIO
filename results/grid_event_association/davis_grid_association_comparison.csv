@@ -1,0 +1,8 @@
+Metric,Brute Force,Grid
+Candidate features/event,500,36.52192297086129
+Distance calculations/event,500.0,36.52192297086129
+Events processed/sec,1090.151728126191,12635.42227823997
+Total runtime (s),9.979344819,0.860992198
+Association differences,0,0
+Rejected events,745,745
+Ambiguous associations,6272,6272
