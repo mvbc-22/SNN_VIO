@@ -1,8 +1,11 @@
 tonic
-numpy
+numpy<2
 matplotlib
-scipy
+scipy<1.16
 pandas
 h5py
+Pillow
+importRosbag
+librosa<1
 jupyter
 ipykernel

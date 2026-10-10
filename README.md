@@ -43,11 +43,29 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
+On Windows PowerShell, create and use the same environment with:
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m ipykernel install --user --name snn-vio --display-name "SNN_VIO (.venv)"
+```
+
+In VS Code, select the `SNN_VIO (.venv)` kernel before running a notebook. After
+installing or changing packages, restart the notebook kernel before rerunning
+cells so the session loads the updated dependencies.
+
 Validate the local DAVIS bag, check which MVSEC scenes are present, and create
 `data/metadata/dataset_manifest.json`:
 
 ```bash
 .venv/bin/python -m scripts.prepare_datasets
+```
+
+On Windows:
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.prepare_datasets
 ```
 
 The `shapes_6dof` bag is already present in this workspace. If it is absent in a
