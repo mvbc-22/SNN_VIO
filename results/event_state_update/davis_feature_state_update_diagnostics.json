@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T15:12:18.416641+00:00",
+  "generated_at_utc": "2026-10-21T11:53:15.142881+00:00",
   "configuration": {
     "radius_px": 8.0,
     "time_window_us": 50000.0,
@@ -27,6 +27,10 @@
   "association_ratio": 0.14293593161136134,
   "active_features_initial": 500,
   "active_features_final": 500,
+  "candidate_features_total": 5439500,
+  "candidate_features_per_event": 500.0,
+  "distance_calculations_total": 5439500,
+  "distance_calculations_per_event": 500.0,
   "features_with_updates": 132,
   "mean_events_per_updated_feature": 11.780303030303031,
   "max_events_per_feature": 44,

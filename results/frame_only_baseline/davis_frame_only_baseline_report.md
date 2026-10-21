@@ -9,9 +9,9 @@
 - Mean track lifetime: 40805 μs
 - Failure rate: 0.182
 - KLT-only failure rate: 0.074
-- Processing time: 324.076 ms
-- KLT-call latency: 2.844 ms
-- Amortized latency per initial feature: 5.688 μs
+- Processing time: 312.756 ms
+- KLT-call latency: 3.069 ms
+- Amortized latency per initial feature: 6.138 μs
 - Event data: not accessed or used.
 
 ## Baseline checks

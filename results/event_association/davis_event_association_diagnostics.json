@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T14:57:54.253363+00:00",
+  "generated_at_utc": "2026-10-21T11:53:07.267876+00:00",
   "frame_window_index": 678,
   "interval_common_time_us": [
     29895515,
@@ -16,5 +16,11 @@
   "association_ratio": 0.9315194411251034,
   "events_rejected": 745,
   "events_ambiguous": 6272,
-  "active_features": 500
+  "active_features": 500,
+  "candidate_features_total": 5439500,
+  "candidate_features_per_event": 500.0,
+  "distance_calculations_total": 5439500,
+  "distance_calculations_per_event": 500.0,
+  "total_runtime_seconds": 12.12384925,
+  "events_processed_per_second": 897.3222757615532
 }

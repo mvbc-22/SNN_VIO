@@ -11,8 +11,8 @@
 | Track lifetime mean (μs) | 108312.9 | 122590.0 | 90863.0 |
 | Successfully tracked / interval | 301.0 | 326.8 | 234.4 |
 | Failure rate | 39.8000% | 34.6400% | 53.1200% |
-| Processing time total (ms) | 1270.65 | 34836.73 | 65515.87 |
-| Update latency mean (μs) | 1194.21 | 406.90 | 784.32 |
+| Processing time total (ms) | 1263.33 | 33850.01 | 64980.76 |
+| Update latency mean (μs) | 1453.15 | 394.48 | 778.77 |
 | Events / useful update | N/A | 49.640 | 69.208 |
 | State updates | 1788 | 1791 | 6372 |
 | Events processed | 0 | 81112 | 81112 |

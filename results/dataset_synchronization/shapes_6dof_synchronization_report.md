@@ -2,7 +2,7 @@
 
 - Recording: `shapes_6dof`
 - Timestamp values in the loaded Tonic arrays: integer **microseconds**, preserved unchanged.
-- Raw ROS-bag stream origins: **seconds** from `/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/step_1_VIO/data/metadata/dataset_manifest.json`.
+- Raw ROS-bag stream origins: **seconds** from `/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/Vio_idea_1/data/metadata/dataset_manifest.json`.
 - Common comparison axis: microseconds relative to the earliest raw stream start
   (1468939993.0674160 s in the source clock); per-stream origin
   differences are explicitly rounded to the Tonic microsecond resolution.

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-10-10T13:15:39.027106+00:00",
+  "generated_at_utc": "2026-10-21T11:51:29.322132+00:00",
   "configuration": {
-    "data_dir": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/step_1_VIO/data/DAVIS",
+    "data_dir": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/Vio_idea_1/data/DAVIS",
     "recording": "shapes_6dof",
     "timestamp_unit": "microseconds",
     "validation_chunk_size": 1000000
@@ -9,7 +9,7 @@
   "stage": "1A",
   "recording": "shapes_6dof",
   "dataset_loader": "tonic.datasets.DAVISDATA",
-  "dataset_directory": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/step_1_VIO/data/DAVIS",
+  "dataset_directory": "/home/administrator/Desktop/MVBC/Research_Work/06_Experiments/SNN/Vio_idea_1/data/DAVIS",
   "event_fields": [
     "t",
     "x",

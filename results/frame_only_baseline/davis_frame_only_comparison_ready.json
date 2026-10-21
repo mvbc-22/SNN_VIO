@@ -37,9 +37,9 @@
     "track_lifetime_mean_us": 40805.116,
     "track_lifetime_max_us": 44066,
     "failure_rate": 0.182,
-    "processing_time_ms": 324.07596,
-    "latency_klt_call_ms": 2.843938,
-    "latency_per_initial_feature_us": 5.687876,
+    "processing_time_ms": 312.756056,
+    "latency_klt_call_ms": 3.069006,
+    "latency_per_initial_feature_us": 6.138012,
     "latency_definition": "Wall-clock time around the single cv2.calcOpticalFlowPyrLK call; per-feature value is amortized KLT-call time, not hardware latency.",
     "processing_time_definition": "In-memory time for frame-k detection, KLT, frame-k+1 reference detection, and shared endpoint matching; excludes dataset loading and plotting.",
     "reference_match_policy": "Same greedy one-to-one nearest reference-feature matching and configured distance gate as Stage 5.",
@@ -55,8 +55,8 @@
       "epe_px": 3.8643713100066663,
       "track_lifetime_mean_us": 40805.116,
       "failure_rate": 0.182,
-      "processing_time_ms": 324.07596,
-      "latency_ms": 2.843938
+      "processing_time_ms": 312.756056,
+      "latency_ms": 3.069006
     }
   },
   "common_metrics": {
@@ -67,8 +67,8 @@
     "epe_px": 3.8643713100066663,
     "track_lifetime_mean_us": 40805.116,
     "failure_rate": 0.182,
-    "processing_time_ms": 324.07596,
-    "latency_ms": 2.843938
+    "processing_time_ms": 312.756056,
+    "latency_ms": 3.069006
   },
   "checks": {
     "initialization": true,

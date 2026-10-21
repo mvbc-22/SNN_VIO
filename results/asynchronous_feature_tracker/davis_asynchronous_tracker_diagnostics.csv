@@ -6,6 +6,10 @@ events_ambiguous,576
 association_ratio,0.14293593161136134
 active_features_initial,500
 active_features_final,500
+candidate_features_total,5439500
+candidate_features_per_event,500.0
+distance_calculations_total,5439500
+distance_calculations_per_event,500.0
 features_with_updates,132
 mean_events_per_updated_feature,11.780303030303031
 max_events_per_feature,44
@@ -24,11 +28,11 @@ failure_rate,0.292
 track_lifetime_mean_us,44066.0
 track_lifetime_max_us,44066
 events_per_successful_feature_update,6.996141479099679
-processing_time_ms,11902.264558
-event_processing_time_ms,11523.446843
-update_latency_mean_us,1057.3710118577076
-update_latency_median_us,1006.222
-update_latency_p95_us,1365.5729000000001
+processing_time_ms,11845.550975
+event_processing_time_ms,11496.512949
+update_latency_mean_us,1055.3237398657964
+update_latency_median_us,1016.932
+update_latency_p95_us,1280.4387000000002
 association_policy,"""Stage 4A brute-force strict gates; nearest squared-distance candidate, then lower feature ID; online re-evaluation after every successful update."""
 reference_match_policy,"""Greedy global one-to-one nearest pairs within the configured pixel radius, sorted by distance squared, predicted feature ID, then indices."""
 epe_definition,"""Mean Euclidean pixel error among successful one-to-one predicted-to-reference Shi-Tomasi matches only."""

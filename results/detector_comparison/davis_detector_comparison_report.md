@@ -12,22 +12,22 @@
 
 | Detector | Cap | Mean detected | Mean bucket coverage | Mean repeatability | Mean runtime (ms) | Mean median native response |
 |---|---:|---:|---:|---:|---:|---:|
-| shi tomasi | 50 | 50.0 | 99.6% | 14.0% | 6.067 | 0.000238375 |
-| fast | 50 | 50.0 | 100.0% | 11.2% | 1.095 | 7.6 |
-| shi tomasi | 100 | 100.0 | 99.6% | 18.0% | 6.234 | 0.000131489 |
-| fast | 100 | 100.0 | 100.0% | 17.2% | 1.293 | 6.05 |
-| shi tomasi | 200 | 200.0 | 99.6% | 26.3% | 6.615 | 6.98675e-05 |
-| fast | 200 | 200.0 | 100.0% | 26.0% | 1.676 | 4.2 |
-| shi tomasi | 300 | 300.0 | 99.6% | 31.0% | 6.963 | 4.81018e-05 |
-| fast | 300 | 300.0 | 100.0% | 31.9% | 2.135 | 3.5 |
-| shi tomasi | 500 | 500.0 | 99.6% | 43.1% | 7.766 | 2.77024e-05 |
-| fast | 500 | 499.8 | 100.0% | 45.5% | 3.194 | 2.1 |
-| shi tomasi | 1000 | 632.7 | 99.6% | 53.4% | 8.337 | 2.15896e-05 |
-| fast | 1000 | 550.3 | 100.0% | 49.9% | 3.567 | 1.8 |
+| shi tomasi | 50 | 50.0 | 99.6% | 14.0% | 6.829 | 0.000238375 |
+| fast | 50 | 50.0 | 100.0% | 11.2% | 1.281 | 7.6 |
+| shi tomasi | 100 | 100.0 | 99.6% | 18.0% | 7.000 | 0.000131489 |
+| fast | 100 | 100.0 | 100.0% | 17.2% | 1.476 | 6.05 |
+| shi tomasi | 200 | 200.0 | 99.6% | 26.3% | 7.429 | 6.98675e-05 |
+| fast | 200 | 200.0 | 100.0% | 26.0% | 1.902 | 4.2 |
+| shi tomasi | 300 | 300.0 | 99.6% | 31.0% | 7.898 | 4.81018e-05 |
+| fast | 300 | 300.0 | 100.0% | 31.9% | 2.412 | 3.5 |
+| shi tomasi | 500 | 500.0 | 99.6% | 43.1% | 8.763 | 2.77024e-05 |
+| fast | 500 | 499.8 | 100.0% | 45.5% | 3.582 | 2.1 |
+| shi tomasi | 1000 | 632.7 | 99.6% | 53.4% | 9.290 | 2.15896e-05 |
+| fast | 1000 | 550.3 | 100.0% | 49.9% | 3.807 | 1.8 |
 
 ## Recommendation: fast
 
-At the 500-feature operating point, fast detected 499.8 features on average, achieved 100.0% mean bucket coverage, 45.5% raw-coordinate repeatability, and took 3.194 ms per frame on average. Selected for higher raw-coordinate repeatability (>2 percentage-point difference).
+At the 500-feature operating point, fast detected 499.8 features on average, achieved 100.0% mean bucket coverage, 45.5% raw-coordinate repeatability, and took 3.582 ms per frame on average. Selected for higher raw-coordinate repeatability (>2 percentage-point difference).
 
 Native detector-response numbers are **not directly comparable**: Shi-Tomasi reports a minimum-eigenvalue score, while FAST reports OpenCV's FAST keypoint response.
 

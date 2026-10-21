@@ -12,9 +12,9 @@
 - Failure rate: 0.292
 - Mean track lifetime: 44066 μs
 - Events per successful feature update: 6.99614
-- Total processing time: 11902.265 ms
-- Event-loop time: 11523.447 ms
-- Per-event update-loop latency mean / median / p95: 1057.371 / 1006.222 / 1365.573 μs
+- Total processing time: 11845.551 ms
+- Event-loop time: 11496.513 ms
+- Per-event update-loop latency mean / median / p95: 1055.324 / 1016.932 / 1280.439 μs
 
 ## Stage checks
 
