@@ -565,7 +565,4 @@ The current research baseline is formally frozen in
 [`ALGORITHM_SPEC.md`](ALGORITHM_SPEC.md). It defines the feature record,
 initialization, timestamp domain, grid lookup, strict association gates,
 alpha-beta/confidence updates, invalidation behavior, output records, and
-computational/memory operation accounting. The selected parameters are a
-reproducible baseline, not a proven optimum. No FPGA/HLS/RTL implementation is
-included. Reopen the specification only if later experiments demonstrate a
-failure requiring an algorithm change.
+computational/memory operation accounting.
